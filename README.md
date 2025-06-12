@@ -44,8 +44,11 @@ dlc-website/
 │   └── googlecalendar.jpg
 
 index.html --> Main webpage
+
 styledl.css --> All styling
+
 scriptdl.js --> JavaScript interactions
+
 images/ --> Icons and thumbnails for tutorials
 
 
