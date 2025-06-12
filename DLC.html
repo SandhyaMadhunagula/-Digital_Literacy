@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Literacy Course - DLC</title>
+  <link rel="stylesheet" href="styledl.css">
+</head>
+<body>
+  <header>
+    <h1>Empowering Digital Literacy! 💡</h1>
+   
+      <nav class="nav-bar">
+                <ul class="nav-links" id="navLinks">
+                 <li style="--i:1"><a href="#home">Home</a></li>
+                  <li style="--i:2"><a href="#tutorials">Tutorials</a></li>
+                  <li style="--i:3"><a href="#chatbot">AI Chat</a></li>
+                 <li style="--i:5"><a href="#feedback">Feedback</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </nav>
+  </header>
+
+  <div class="accessibility">
+    <div class="accessibility-buttons">
+      <button onclick="increaseFontSize()">A+</button>
+      <button onclick="decreaseFontSize()">A-</button>
+    </div>
+
+    <div class="lang-select">
+      <label for="language">Language:</label>
+     <select id="language" onchange="changeLanguage(this.value)">
+  <option value="en">English</option>
+  <option value="hi">Hindi</option>
+  <option value="te">Telugu</option>
+
+</select>
+    </div>
+
+    <button class="voice-button" onclick="activateVoiceCommand()">🎤 Voice Command</button>
+  </div>
+
+  <main>
+    <!-- Home Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h2 id="hero-heading">Unlock Digital Skills with Confidence 🚀</h2>
+    <p id="hero-text">We believe technology should bring families closer, not create barriers. DigiBuddy helps parents and elderly users master essential digital skills through simple, step-by-step guidance.</p>
+
+    <ul class="features">
+      <li>📘 Easy to follow tutorials</li>
+      <li>🤖 24/7 AI assistance</li>
+      <li>👵 Senior-friendly design</li>
+    </ul>
+
+    <div class="hero-buttons">
+      <a href="#tutorials" class="btn">Start Learning Now</a>
+      <a href="#chatbot" class="btn secondary">Ask DigiBuddy</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="learningtech.jpg" alt="Elder learning technology" />
+  </div>
+</section>
+
+
+
+    <!-- Tutorials Section -->
+    <section id="tutorials">
+      <h2>Tutorials</h2>
+      <div class="tutorials">
+        <div class="card">
+          <img src="whatsapp.jpg" alt="WhatsApp">
+          <h3>Using WhatsApp</h3>
+          <a href="https://www.youtube.com/watch?v=sghayXZ_RK0"  target="_blank">Watch Tutorial</a>
+        </div>
+        <div class="card">
+          <img src="paytm.jpg" alt="Paytm">
+          <h3>Using Paytm</h3>
+          <a href="https://www.youtube.com/watch?v=NsjKR6YOup4"  target="_blank">Watch Tutorial</a>
+        </div>
+        <div class="card">
+          <img src="maps.jpg" alt="Google Maps">
+          <h3>Google Maps</h3>
+          <a href="https://www.youtube.com/watch?v=tui9hq9lfsU"  target="_blank">Watch Tutorial</a>
+        </div>
+        <div class="card">
+          <img src="googlecalendar.jpg" alt="Paytm">
+          <h3>Google calendar</h3>
+          <a href="https://www.youtube.com/results?search_query=how+to+use+google+calendar" target="_blank">Watch Tutorial</a>
+        </div>
+      </div>
+    </section>
+
+   <!-- Chatbot Section -->
+<section id="chatbot">
+  <h2>DigiBuddy 🤖</h2>
+  <div class="chatbot-container">
+    <div class="chat-header">
+      🤖 DLC CHATBOT<br><span class="subtext">Start chatting with DigiBuddy ✨</span>
+    </div>
+    
+    <div class="chat-box" id="chat-box">
+      <div class="bot-message">
+        I am Digital Literacy Assistant. I'm here to help you with messaging apps like WhatsApp and Google Maps. What would you like to learn?
+      </div>
+    </div>
+
+    <div class="button-options">
+      <button onclick="handleClick('send photo')">📸 How to send a photo</button>
+      <button onclick="handleClick('video call')">📞 Start a video call</button>
+      <button onclick="handleClick('create group')">👥 Make a WhatsApp group</button>
+      <button onclick="handleClick('send voice')">🎤 Record & send voice</button>
+      <button onclick="handleClick('share location')">📍 Share my location using Maps</button>
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="user-input" placeholder="💬 Ask me anything..." />
+      <button onclick="handleUserInput()">Send</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form action="#" method="post">
+        <label for="name" >Your Name:</label>
+        <input type="text" id="name"  placeholder="Name" name="name" required>
+
+        <label for="message">Your Feedback:</label>
+        <textarea id="message" name="message" rows="4"  placeholder="Type your feedback or suggestions here..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="scriptdl.js"></script>
+</body>
+</html>
